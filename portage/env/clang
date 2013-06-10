@@ -1,8 +1,0 @@
-CC='clang'
-CXX='clang++'
-#CFLAGS="${CFLAGS} -O2 -flto -march=native -mtune=native"
-#CXXFLAGS="${CFLAGS} ${CXXFLAGS} -O2 -flto"
-#LDFLAGS="${LDFLAGS} -O2 -flto -Wl,-plugin,/usr/lib/llvm/LLVMgold.so"
-#AR='/usr/local/bin/clang-ar'
-#RANLIB=':'
-#NM='nm --plugin /usr/lib64/llvm/LLVMgold.so'
