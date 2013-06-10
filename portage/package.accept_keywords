@@ -1,0 +1,12 @@
+#required by freebsd-sources (argument)
+=sys-freebsd/freebsd-sources-9.1 **
+#required by freebsd-bin (argument)
+=sys-freebsd/freebsd-bin-9.1 **
+#required by sys-freebsd/freebsd-bin-9.1, required by freebsd-bin (argument)
+=sys-freebsd/freebsd-lib-9.1 **
+#required by freebsd-ubin (argument)
+=sys-freebsd/freebsd-ubin-9.1 **
+#required by virtual/pkgconfig-0, required by media-sound/alsa-utils-1.0.26-r1, required by media-sound/alsamixergui-0.9.0.1.2-r4, required by @selected, required by @world (argument)
+=dev-util/pkgconfig-9999 **
+#required by jumanji (argument)
+=www-client/jumanji-9999 **

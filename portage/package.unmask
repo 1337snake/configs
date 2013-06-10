@@ -1,0 +1,23 @@
+#required by opera-next (argument)
+# /usr/portage/profiles/package.mask/gentoo:
+# Jeroen Roovers <jer@gentoo.org> (27 Mar 2012)
+# Opera Next and Opera snapshots are unsupported and eternally unstable.
+# <http://my.opera.com/desktopteam/blog>
+=www-client/opera-next-12.14_pre1737
+#required by nethack (argument)
+# /usr/portage/profiles/package.mask/gentoo:
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #125902
+=games-roguelike/nethack-3.4.3-r1
+#required by slashem (argument)
+# /usr/portage/profiles/package.mask/gentoo:
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #127167
+=games-roguelike/slashem-0.0.772
+
+#required by x11-libs/libXp-1.0.1-r1, required by x11-libs/motif-2.3.4-r1, required by x11-libs/libGLw-8.0.0, required by libGLw (argument)
+# /usr/portage/profiles/package.mask/funtoo-cautionary:
+# Ryan Harris (20 June 2012)
+# mask automake-1.12.1 due to multiple failures
+# Ref b.g.o.# 421465
+=sys-devel/automake-1.12.6

@@ -1,0 +1,6 @@
+CFLAGS="${CFLAGS}" -march=native -03 -g
+CXXFLAGS="${CFLAGS}"
+
+FEATURES="splitdebug"
+
+MAKEOPTS="-j3"
