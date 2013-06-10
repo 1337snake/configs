@@ -1,0 +1,36 @@
+#####OPTS
+#CD by typing directory name
+setopt AUTO_CD
+#Don't kill files with ">"
+setopt NOCLOBBER
+#10 second wait for rm'ing with *
+setopt RM_STAR_WAIT
+#Glob numerically
+setopt NUMERIC_GLOB_SORT
+#Extend globbing
+setopt EXTENDED_GLOB
+#Append History rather than Overwriting
+setopt APPEND_HISTORY
+#Share history between shells
+setopt SHARE_HISTORY
+#Ignore duplicate commands
+setopt HIST_IGNORE_DUPS
+setopt HIST_REDUCE_BLANKS
+#Save time of command and how long it was run
+setopt EXTENDED_HISTORY
+#CORRECT OPTIONS
+##Correct commands
+setopt CORRECT
+##Don't correct commands starting with an underscore
+CORRECT_IGNORE='_*'
+#####ZSTYLE
+#Speed up completion with Cache
+zstyle ':completion:*' use-cache on
+#Print and cycle through completion options.
+zstyle ':completion:*' menu select
+#Use colors in filenames when printing completion options
+zstyle ':completion:*' list-colors ''
+#Ignore current directory when completing cd
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+#Verbose Completion
+zstyle ':completion:*' verbose true

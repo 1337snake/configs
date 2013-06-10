@@ -1,0 +1,3 @@
+prompt gentoo red
+RPROMPT="%*"
+ 

@@ -1,0 +1,11 @@
+#ls aliases
+alias ls='ls --color'
+alias sl='ls' 
+#Update Overlays
+alias upd='sudo eix-sync'
+#Upgrade packages
+alias upg='sudo emerge -avuDN --with-bdeps=y --keep-going world && lafilefixer --justfixit | grep -v skipping'
+#Clean portage cruft
+alias clean='sudo emerge -av --depclean && sudo revdep-rebuild && sudo eclean -d distfiles'
+#Better file movement
+alias mv='zmv -i -v'
