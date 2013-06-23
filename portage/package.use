@@ -1,5 +1,6 @@
+media-sound/audacity mp3
 dev-python/pygtk python_abis_2.6
-media-sound/deadbeef -static
+media-sound/deadbeef -static mp3
 www-client/dwb gtk3
 media-libs/imlib2 png
 net-misc/wget -static
@@ -12,18 +13,18 @@ games-emulation/snes9x gtk
 >=x11-base/xorg-server-1.13.3 -minimal
 >=games-roguelike/slashem-0.0.772 -X -opengl
 >=gnome-base/gvfs-1.14.2 udisks
-dev-java/icedtea X
 >=sys-auth/consolekit-0.4.5_p20120320-r2 policykit
->=media-libs/devil-1.7.8-r1 mng
->=sys-block/gparted-0.14.1 fat xfs
->=x11-libs/gtk+-3.6.3-r2 X 
+media-libs/devil mng
+sys-block/gparted fat xfs
+x11-libs/gtk+ X
+sys-devel/autogen static-libs 
 >=x11-libs/cairo-1.12.12-r1 X xcb
 >=x11-libs/gdk-pixbuf-2.26.5 X
 >=net-p2p/qbittorrent-3.0.9 X
 >=media-libs/xine-lib-1.2.2 X
 >=media-video/mplayer2-2.0 X -rar -quicktime -gif -jpeg
 >=sys-libs/zlib-1.2.7 minizip
->=app-portage/gentoolkit-0.3.0.7-r1002 -python_abis_2.7
+>=app-portage/gentoolkit-0.3.0.7-r1002 python_abis_2.7
 #required by sys-devel/prelink-20120628, required by app-emulation/wine-1.5.26[prelink], required by wine (argument)
 >=dev-libs/elfutils-0.155 static-libs
 #required by app-emulation/virtualbox-4.2.10[-headless], required by virtualbox (argument)
@@ -71,3 +72,9 @@ gnome-base/gnome-menus introspection#required by net-print/cups-1.6.2-r5, requir
 >=dev-lang/python-2.7.5-r1000:2.7 xml
 #required by app-text/zathura-pdf-poppler-0.2.2, required by @selected, required by @world (argument)
 >=app-text/poppler-0.22.4 cairo
+#required by app-portage/gentoolkit-0.3.0.7-r1002[python_abis_3.3], required by @selected, required by @world (argument)
+=dev-lang/python-3.3.2-r1000 xml
+#required by dev-python/numpy-1.7.1-r1000, required by dev-python/pygtk-2.24.0-r1000, required by @selected, required by @world (argument)
+=dev-python/setuptools-0.7.2-r1000 python_abis_2.6
+#required by media-sound/audacity-2.0.3, required by audacity (argument)
+>=x11-libs/wxGTK-2.8.12.1:2.8 X

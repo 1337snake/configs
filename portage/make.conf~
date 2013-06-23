@@ -1,0 +1,15 @@
+# These settings were set by the metro build script that automatically built this stage.
+# Please consult /etc/make.conf.example for a more detailed example.
+
+CFLAGS="-mtune=native -march=native -O3 -pipe"
+#CFLAGS="-march=native -mtune=native"
+CXXFLAGS="${CFLAGS}"
+MAKEOPTS="-j3"
+LINGUAS="en"
+VIDEO_CARDS="intel"
+USE="${USE} -png -xscreensaver sandbox ssl -dbus -libnotify -nls optimization -oss -pulseaudio -X security -bash-completion -networkmanager strong-optimization zsh-completion -vim -cups -bluetooth minimal -kde -gnome -gtk -qt4 (selinux)"
+EMERGE_DEFAULT_OPTS="--ask --verbose"
+FEATURES="${FEATURES} splitdebug sandbox parallel-fetch mini-manifest"
+SOUND="alsa"
+ACCEPT_KEYWORDS="~amd64"
+#source "/var/lib/layman/make.conf"

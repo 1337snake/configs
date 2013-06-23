@@ -1,0 +1,48 @@
+>=app-editors/emacs-24.3 -gpm -dbus -alsa -gif -png -gtk3 -jpeg -tiff -fpm -xpm
+=x11-libs/cairo-1.12.12-r1 xcb
+>=x11-libs/pango-1.32.5 introspection
+>=net-misc/openssh-6.1_p1-r1 skey X509 ldns
+>=x11-terms/terminator-0.96-r3 
+>=app-misc/cmatrix-1.2a-r1
+>=x11-wm/awesome-3.5-r1 -dbus
+>=x11-base/xorg-server-1.13.3 -minimal
+>=games-roguelike/slashem-0.0.772 -opengl
+>=sys-auth/pambase-20120417 consolekit
+>=gnome-base/gvfs-1.14.2 udisks
+>=sys-auth/consolekit-0.4.5_p20120320-r2 policykit
+>=media-libs/devil-1.7.8-r1 mng
+>=sys-block/gparted-0.14.1 fat xfs
+>=x11-libs/gtk+-3.6.3-r2 X 
+>=x11-libs/cairo-1.12.12-r1 X
+>=x11-libs/gdk-pixbuf-2.26.5 X
+>=net-p2p/qbittorrent-3.0.9 X
+>=media-libs/xine-lib-1.2.2 X
+>=media-video/mplayer2-2.0 X -rar -quicktime -gif -jpeg
+>=sys-libs/zlib-1.2.7 minizip
+>=app-portage/gentoolkit-0.3.0.7-r1002 -python_abis_2.7
+#required by sys-devel/prelink-20120628, required by app-emulation/wine-1.5.26[prelink], required by wine (argument)
+>=dev-libs/elfutils-0.155 static-libs
+#required by app-emulation/virtualbox-4.2.10[-headless], required by virtualbox (argument)
+>=media-libs/libsdl-1.2.15-r2 X
+#required by virtual/httpd-php-5.4-r2, required by www-apps/rutorrent-3.4-r1, required by rutorrent (argument)
+>=dev-lang/php-5.4.13-r2 fpm
+#required by dev-lang/php-5.4.13-r2, required by virtual/httpd-php-5.4-r2, required by www-apps/rutorrent-3.4-r1, required by rutorrent (argument)
+>=app-admin/eselect-php-0.7.0 fpm
+sys-kernel/debian-sources binary
+#required by net-misc/networkmanager-0.9.6.4-r5, required by networkmanager (argument)
+>=net-wireless/wpa_supplicant-2.0 dbus
+gnome-extra/zenity -webkit
+app-emulation/wine X
+app-cryppt/pinenxtry ncurses
+net-misc/tigervnc server#required by virtual/libusb-0, required by sys-fs/udev-171-r8, required by sys-fs/lvm2-2.02.95-r1[udev], required by sys-kernel/genkernel-3.4.40.1, required by @selected, required by @world (argument)
+>=sys-freebsd/freebsd-lib-9.1 usb
+sys-libs/glibc debug#required by media-libs/giblib-1.2.4-r1, required by media-gfx/scrot-0.8, required by app-misc/screenfetch-2.7.7, required by @selected, required by @world (argument)
+>=media-libs/imlib2-1.4.5 X
+#required by media-video/smplayer2-0.8.0_p20130111, required by @selected, required by @world (argument)
+=media-video/mplayer2-2.0_p20130126 png
+sys-apps/dbus X#required by www-client/chromium-26.0.1410.43[-x86,-arm], required by chromium (argument)
+>=media-libs/mesa-9.1 gles2
+#required by www-client/firefox-19.0.2, required by firefox (argument)
+=x11-libs/pango-1.32.5 X
+#required by sys-fs/lvm2-2.02.95-r4[static], required by sys-fs/cryptsetup-1.6.0, required by sys-kernel/genkernel-3.4.40.1[cryptsetup], required by genkernel (argument)
+=virtual/udev-171 static-libs
